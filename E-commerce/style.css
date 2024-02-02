@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(223, 64%, 98%);
+}
+.nav{
+    /* background-color: red; */
+    width: 80%;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.nav .image img{
+    width: 105px;
+}
+.nav .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .content .links{
+    padding-left: 60px;
+    position: relative;
+    top: -10px;
+}
+
+.nav .content .links a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: hsl(220, 14%, 75%);
+}
+
+.nav .content .goods{
+    padding-left: 460px;
+}
+
+.nav .content .goods img#man{
+    width: 45px;
+    margin-left: 35px;
+}
+
+.nav hr{
+    color: hsl(219, 9%, 45%);
+    width: 100%;
+}
+
+.nav .content  .links a:hover{
+    content: '';
+    width: 15px;
+    height: 5px;
+    color: hsl(26, 100%, 55%);
+    transition: all ease-in-out .5s;
+}
+
+.nav .content .goods img#man:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.nav .content .goods span{
+    position: fixed;
+    top: 20px;
+    right: 230px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    display: none;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.body .left{
+    position: relative;
+    left: 150px;
+    top: 40px;
+}
+.body img#main-img{
+    width: 380px;
+    height: 400px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+}
+
+.body .left img:not(#main-img){
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    margin-left: 12px;
+    position: relative;
+    left: -8px;
+    transition: all ease .3s;
+}
+
+.body .left img:not(#main-img):hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: .3;
+}
+
+.body .right{
+    position: relative;
+    top: 70px;
+    right: 50px;
+    width: 420px;
+}
+
+.body .right h5{
+    color: hsl(26, 100%, 55%);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.body .right h2{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.body .right .para{
+    color: hsl(220, 14%, 75%);
+    margin-bottom: 25px;
+}
+
+.body .right h3{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.body .right span:not(.min,.max){
+    position: relative;
+    left: 25px;
+    padding: 5px;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.body .right .pre-price{
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+}
+
+.body .right .sec{
+    position: relative;
+    top: 30px;
+}
+
+.body .right .sec h5#count{
+    display: inline-block;
+    padding: 0px 45px;
+    color: black;
+}
+
+.body .right .sec .min img:hover,
+.max img:hover{
+    opacity: .5;
+    transition: all ease-in-out .2s;
+}
+
+.body .right .sec button{
+    float: right;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: -8px;
+}
+
+.body .right .sec #btn-img{
+    position: relative;
+    left: -8px;
+    top: -2px;
+    z-index: 1;
+    width: 20px;
+    color: white;
+}
+
+.body .right .sec button:hover{
+    opacity: .5;
+    transition: all ease-in-out .3s;
+}
+
+.body .card{
+    width: 280px;
+    height: 180px;
+    position: relative;
+    top: -480px;
+    left: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);;
+    display: none;
+}
+
+.body .card h4{
+    position: relative;
+    left: 15px;
+    top: 15px;
+    font-size: 18px;
+}
+
+
+.body .card #c-img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 15px;
+    border-radius: 8px;
+}
+
+.body .card #c-para{
+    position: relative;
+    top: -55px;
+    left: 68px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.body .card #c-dele{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -200px;
+    left: 250px;
+}
+
+.body .card #c-price{
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    top: -70px;
+    left: 70px;
+    font-weight: 400;
+}
+
+.body .card #c-count{
+    position: relative;
+    top: -109px;
+    left: 140px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.body .card #c-total{
+    position: relative;
+    top: -148px;
+    font-weight: 500;
+    color: black;
+    left: 160px;
+}
+
+.body .card button{
+    position: relative;
+    top: -140px;
+    left: 10px;
+    border: none;
+    width: 80%;
+    padding: 8px 0px;
+    border-radius: 8px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
